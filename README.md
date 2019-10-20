@@ -1,58 +1,58 @@
 # JavaFX-
-This library can shorten something in JavaFX! I was inspired by Swinger for swing which was created by Litarvan
+This library can be shorten something in JavaFX! I was inspired by Swinger for swing which was created by Litarvan
 
 
 
-### Pour commencer
+### To begin
 
-il vous suffit de créé un nouvelle Objet (pour l'instant sois CutonButton ou CustomBar)
-
-
-### Pour faire un CustomButton
-```java
-// l'image du bouton cera celle si
-CustomButtom button = new CustomButton(new Image("url"));
+you just need to create a new Object (for now be CutonButton or CustomBar)
 
 
-// l'image du bouton cera celle si puis quand le bouton seras cliqué
-CustomButtom button = new CustomButton(new Image("url"), new Image("url));
+### To make a CustomButton
+```Java
+// the image of the button will be the one
+CustomButtom button = new CustomButton (new Image ("url"));
 
-// maintenant l'image du bouton cera celle si puis quand le bouton seras cliqué et quand on passeras dessus
-CustomButtom button = new CustomButton(new Image("url"), new Image("url), new Image("url));
+
+// the image of the button will be the one if then when the button will be clicked
+CustomButtom button = new CustomButton (new Image ("url"), new Image ("url));
+
+// now the image of the button will be the one if then when the button will be clicked and when we go over it
+CustomButtom button = new CustomButton (new Image ("url"), new Image ("url), new Image (" url));
 ```
 
-## Pour savoir quand on clique sur le bouton
+## To know when we click on the button
 
-```java
-// ne pas mettre de .setOnAction();
-button.setListener(new MySuperListener);
-```
+```Java
+// do not put .setOnAction ();
+button.setListener (new MySuperListener);
+`` `
 
-puis créé votre classe `MySuperListener`
+then create your `MySuperListener` class
 
-```java
-public MySuperListener implements JavaFXPlusEventListener{
-	
-	@Override
-	public void onEvent(JavaFXPlusEvent event) {
-		
-	}
-  
+```Java
+public MySuperListener implements JavaFXPlusEventListener {
+
+@Override
+public void onEvent (JavaFXPlusEvent event) {
+
+}
+  
 }
 ```
 
-puis rejouter ceci pour savoir si l'on clique bien sur votre bouton
+then reissue this to know if we click on your button
 
-```java
-	@Override
-	public void onEvent(JavaFXPlusEvent event) {
-		if(event.getComponent().equals(button)) {
-			// continue process
-		}
-		
-	}
+```Java
+@Override
+public void onEvent (JavaFXPlusEvent event) {
+if (event.getComponent (). equals (button)) {
+// continue process
+}
+
+}
 ```
 
-## Voilà
+## Here
 
-### Pour me soutenir : https://www.paypal.me/launchyourapp1
+### To support me: https://www.paypal.me/launchyourapp1
