@@ -15,7 +15,7 @@ CustomButtom button = new CustomButton(new Image("url"));
 
 
 // the image of the button will be the one if then when the button will be clicked
-CustomButtom button = new CustomButton (new Image("url"), new Image("url));
+CustomButtom button = new CustomButton (new Image("url"), new Image("url"));
 
 // now the image of the button will be the one if then when the button will be clicked and when we go over it
 CustomButtom button = new CustomButton(new Image("url"), new Image("url"), new Image("url"));
@@ -33,10 +33,10 @@ then create your `MySuperListener` class
 ```Java
 public MySuperListener implements JavaFXPlusEventListener {
 
-@Override
-public void onEvent(JavaFXPlusEvent event) {
-
-}
+  @Override
+  public void onEvent(JavaFXPlusEvent event) {
+  
+  }
   
 }
 ```
@@ -46,9 +46,9 @@ then reissue this to know if we click on your button
 ```Java
 @Override
 public void onEvent(JavaFXPlusEvent event) {
-if (event.getComponent().equals(button)) {
-// continue process
-}
+  if (event.getComponent().equals(button)) {
+    // continue process
+  }
 
 }
 ```
